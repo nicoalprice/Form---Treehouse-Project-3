@@ -1,7 +1,14 @@
+/* Stylesheet for Treehouse Project #3: Online Registration Form */
+/* by Nicoal Price */
+
+
+/* --------- GENERAL STYLES ---------- */
+
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+    border: 1px solid red;
 }
 
 body {
@@ -17,11 +24,23 @@ header {
     padding-bottom: 30px;
 }
 
+h2 {
+    font-size: 1.3em;
+}
+
+.wrapper {
+    max-width: 640px;
+    margin: auto;
+}
+
+/* ---------- MAIN CONTENT --------- */
+
+/* ----- Intro ----- */
+
 .intro {
     text-align: center;
     width: 93.75%;
     margin: auto;
-
 }
 
 .intro p {
@@ -33,78 +52,66 @@ header {
     font-size: 1.2em;
 }
 
-h2 {
-    font-size: 1.3em;
+/* ----- Horizontal Rules ----- */
+
+.thick-hr {
+    width: 93.75%;
+    border-bottom: 4px solid black;
+    margin-bottom: 3px;
 }
 
-/* ---------- FORM ---------- */
+.thin-hr {
+    width: 93.75%;
+    border-bottom: 1px solid black;
+    margin-top: 0;
+}
+
+/* ----- Form ----- */
 
 form {
-  width: 93.75%;
+  width: 100%;
   margin: 30px auto;
-  padding: 20px 20px;
+  padding: 0;
   background: pink;
-  border-radius: 8px;
+}
+
+fieldset {
+    width: 93.75%;
+    margin: auto;
+    padding: 0;
 }
 
 input[type="text"],
-input[type="password"],
-input[type="date"],
-input[type="datetime"],
 input[type="email"],
 input[type="number"],
-input[type="search"],
 input[type="tel"],
-input[type="time"],
-input[type="url"],
 textarea,
 select {
-  background: rgba(255,255,255,0.1);
-  border: none;
-  font-size: 16px;
-  height: auto;
-  margin: 0;
-  outline: 0;
+  background: #eff0f1;
+  font-size: 1em;
+  height: 50px;
   padding: 15px;
   width: 100%;
-  background-color: #e8eeef;
   color: #8a97a0;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 30px;
   border-radius: 5px;
 }
 
 input[type="radio"],
 input[type="checkbox"] {
-    margin: 0 4px 8px 0;
-    padding-left: 10px;
+    display: inline-block;
+    float: left;
+    margin-right: 12px;
+    vertical-align: middle;
 }
 
-select {
-    padding: 6px;
-    height: 32px;
-    border-radius: 2px;
+input[id="zipcode"] {
+    width: 46.875%;
 }
 
-button {
-  padding: 19px 39px 18px 39px;
-  color: #FFF;
-  background-color: #6ba77b;
-  font-size: 18px;
-  text-align: center;
-  font-style: normal;
-  border-radius: 5px;
-  width: 100%;
-  border: 1px solid #3ac162;
-  border-width: 1px 1px 3px;
-  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
-  margin-bottom: 10px;
-}
-
-fieldset {
-  margin-bottom: 30px;
-  border: none;
-}
+input:focus {
+   border: 2px solid #46698b;
+} 
 
 legend {
     font-size: 1.4em;
@@ -114,25 +121,56 @@ legend {
 
 label {
   display: block;
-  margin-bottom: 8px;
   font-size: 1em;
 }
 
-/*
-.number {
-  background-color: #5fcf80;
-  color: #fff;
-  height: 30px;
-  width: 30px;
-  display: inline-block;
-  font-size: 0.8em;
-  margin-right: 4px;
-  line-height: 30px;
-  text-align: center;
-  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
-  border-radius: 100%;
+.main-label {
+    margin-top: calc(30px - 8px);
 }
-*/
+
+button {
+  color: white;
+  background-color: #6ba77b;
+  font-size: 1.5em;
+  text-align: center;
+  border-radius: 5px;
+  height: 60px;
+  width: 100%;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+/* -- Form Placeholder Styling -- */
+
+input::-webkit-input-placeholder {
+	color: rgba(100,100,100,.5);
+	text-align: right;
+    font-size: .8em;
+    font-style: italic;
+}
+
+input::-moz-placeholder {
+	color: rgba(100,100,100,.5);
+	text-align: right;
+    font-size: .8em;
+    font-style: italic;
+}
+
+input:-moz-placeholder {   /* Older versions of Firefox */
+	color: rgba(100,100,100,.5);
+	text-align: right;
+    font-size: .8em;
+    font-style: italic;
+}
+
+input:-ms-input-placeholder { 
+	color: rgba(100,100,100,.5);
+	text-align: right;
+    font-size: .8em;
+    font-style: italic;
+}
+
+/* ---------- FOOTER --------- */
 
 footer {
     text-align: center;
@@ -141,7 +179,7 @@ footer {
     font-size: .8em;
 }
 
-}
+
 /* ---------- MEDIA QUERIES ---------- */
 
 @media (min-width: 1200px) {
