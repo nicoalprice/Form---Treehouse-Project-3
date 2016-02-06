@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <link href='https://fonts.googleapis.com/css?family=Inika:400,700' rel='stylesheet' type='text/css'>
       <title>HTML Forms</title>
   </head>
@@ -14,13 +14,14 @@
       
       <div class="wrapper">
           
-    <div class="intro">
-        <h2>Sign Up for Our Newsletter</h2>
-        <p>Get the latest news on how your code is doing right in your inbox.</p>
-    </div>
+        <div class="intro">
+            <h2>Sign Up for Our Newsletter</h2>
+            <p>Get the latest news on how your code is doing right in your inbox.</p>
       
-    <hr class="thick-hr">
-    <hr class="thin-hr">
+            <hr class="thick-hr">
+            <hr class="thin-hr">
+        
+        </div>
     
     <form action="index.html" method="post">
       <fieldset>
@@ -109,17 +110,18 @@
     
         <label>Select the newsletters you would like to receive</label>
         
-        <input type="checkbox" id="html_news" value="html_news" name="user_topic"><label for="html_news">HTML News</label><br>
+        <div class="check"><input type="checkbox" id="html_news" value="html_news" name="user_topic"><label for="html_news">HTML News</label></div><br>
         
-        <input type="checkbox" id="css_news" value="css_news" name="user_topic"><label for="css_news">CSS News</label><br>
+        <div class="check"><input type="checkbox" id="css_news" value="css_news" name="user_topic"><label for="css_news">CSS News</label></div><br>
 
-        <input type="checkbox" id="javascript_news" value="javascript_news" name="user_topic"><label for="javascript_news">Javascript News</label><br>
+        <div class="check"><input type="checkbox" id="javascript_news" value="javascript_news" name="user_topic"><label for="javascript_news">Javascript News</label></div><br>
         
       
         <label class="main-label">Newsletter format</label>
-            <input type="radio" id="html" value="html" name="user_format"><label for="html">HTML</label><br>
             
-            <input type="radio" id="plain_text" value="plain_text" name="user_format"><label for="plain_text">Plain Text</label><br>
+          <div class="radio"><input type="radio" id="html" value="html" name="user_format"><label for="html">HTML</label></div><br>
+            
+            <div class="radio"><input type="radio" id="plain_text" value="plain_text" name="user_format"><label for="plain_text">Plain Text</label></div><br>
         
        <label class="main-label" for="comment">Other topics you'd like to hear about</label>
        <textarea id="comment" name="user_comment"></textarea>

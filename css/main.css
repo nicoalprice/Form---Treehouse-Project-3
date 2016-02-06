@@ -8,7 +8,7 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-    border: 1px solid red;
+/*    border: 1px solid red;*/
 }
 
 body {
@@ -17,7 +17,7 @@ body {
 }
 
 header {
-    background: black;
+    background: #2d3945;
     color: white;
     text-align: center;
     padding-top: 30px;
@@ -41,28 +41,30 @@ h2 {
     text-align: center;
     width: 93.75%;
     margin: auto;
+    padding-bottom: 30px;
 }
 
 .intro p {
-    color: grey;
+    color: #2d3945;
 }
 
 .page-title {
     text-transform: uppercase;
     font-size: 1.2em;
+    color: white;
 }
 
 /* ----- Horizontal Rules ----- */
 
 .thick-hr {
     width: 93.75%;
-    border-bottom: 4px solid black;
+    border-bottom: 4px solid #2d3945;
     margin-bottom: 3px;
 }
 
 .thin-hr {
     width: 93.75%;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #2d3945;
     margin-top: 0;
 }
 
@@ -70,15 +72,17 @@ h2 {
 
 form {
   width: 100%;
-  margin: 30px auto;
+  margin: auto;
   padding: 0;
-  background: pink;
+/*  background: pink;*/
+    color: #2d3945;
 }
 
 fieldset {
     width: 93.75%;
     margin: auto;
     padding: 0;
+    border: none;
 }
 
 input[type="text"],
@@ -93,30 +97,44 @@ select {
   padding: 15px;
   width: 100%;
   color: #8a97a0;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   border-radius: 5px;
-}
-
-input[type="radio"],
-input[type="checkbox"] {
-    display: inline-block;
-    float: left;
-    margin-right: 12px;
-    vertical-align: middle;
+  border: none;
+  box-shadow: 2px 3px 3px rgba(45,57,69,.3);
 }
 
 input[id="zipcode"] {
     width: 46.875%;
 }
 
-input:focus {
+input[type="radio"],
+input[type="checkbox"] {
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+    /* double-sized checkboxes and radio buttons */
+    -ms-transform: scale(1.5); /* IE */
+    -moz-transform: scale(1.5); /* FF */
+    -webkit-transform: scale(1.5); /* Safari and Chrome */
+    -o-transform: scale(1.5); /* Opera */
+}
+
+.check,
+.radio {
+    width: 100%;
+}
+
+input:focus,
+input:checked {
    border: 2px solid #46698b;
+   color: #46698b;
 } 
 
 legend {
     font-size: 1.4em;
     margin-bottom: 10px;
-    font-weight: 800px;
+    font-weight: 600;
 }
 
 label {
@@ -130,7 +148,7 @@ label {
 
 button {
   color: white;
-  background-color: #6ba77b;
+  background-color: #4ebbb5;
   font-size: 1.5em;
   text-align: center;
   border-radius: 5px;
