@@ -29,7 +29,7 @@ h2 {
 }
 
 .wrapper {
-    max-width: 640px;
+    max-width: 600px;
     margin: auto;
 }
 
@@ -118,7 +118,7 @@ select:focus {
 }
 
 input[id="zipcode"] {
-    width: 46.875%;
+    width: 150px;
 }
 
 input[type="radio"],
@@ -262,7 +262,7 @@ footer {
 @media (min-width: 1200px) {
 
     .wrapper {
-        max-width: 50%;
+        max-width: 600px;
     }
     
     .thick-hr,
@@ -272,11 +272,15 @@ footer {
     
     .flexible-input {
         display: flex;
-        max-width: 1 1 auto;
         justify-content: space-between;
         align-items: center;
     }
     
+    .flexible-input label {
+        width: 150px;
+    }
+    
+      
     input[type="text"],
     input[type="email"],
     input[type="number"],
@@ -287,7 +291,10 @@ footer {
     
     input[id="zipcode"] {
         width: 150px;
-        align-self: flex-start;
+    }
+    
+     .flexible-input:last-child {
+        width: 300px;
     }
 
     legend {
