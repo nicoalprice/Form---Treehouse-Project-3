@@ -75,8 +75,7 @@ form {
   width: 100%;
   margin: auto;
   padding: 0;
-/*  background: pink;*/
-    color: #2d3945;
+  color: #2d3945;
 
 }
 
@@ -155,7 +154,12 @@ input:required {
 
 input:valid,
 select:valid {
-    background: white;
+    border: 1px dotted green;
+}
+
+input:invalid,
+select:invalid {
+    border: 1px dotted red;
 }
 
 ul {
