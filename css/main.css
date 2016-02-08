@@ -143,8 +143,14 @@ input[type="checkbox"] {
     width: 100%;
 }
 
-input:focus {
-   border: 2px solid #46698b;
+input:invalid,
+select:invalid {
+    border: 1px dotted red;
+}
+
+input:focus,
+textarea:focus {
+   border: 3px solid #46698b;
    color: #46698b;
 } 
 
@@ -152,14 +158,8 @@ input:required {
     background: lightyellow;
 }
 
-input:valid,
-select:valid {
-    border: 1px dotted green;
-}
-
-input:invalid,
-select:invalid {
-    border: 1px dotted red;
+input:valid {
+    background: #eff0f1;
 }
 
 ul {
@@ -235,6 +235,7 @@ input::-webkit-input-placeholder {
 	text-align: right;
     font-size: .8em;
     font-style: italic;
+    padding-right: 10px;
 }
 
 input::-moz-placeholder {
@@ -242,6 +243,7 @@ input::-moz-placeholder {
 	text-align: right;
     font-size: .8em;
     font-style: italic;
+    padding-right: 10px;
 }
 
 input:-moz-placeholder {   /* Older versions of Firefox */
@@ -249,6 +251,7 @@ input:-moz-placeholder {   /* Older versions of Firefox */
 	text-align: right;
     font-size: .8em;
     font-style: italic;
+    padding-right: 10px;
 }
 
 input:-ms-input-placeholder { 
@@ -256,6 +259,7 @@ input:-ms-input-placeholder {
 	text-align: right;
     font-size: .8em;
     font-style: italic;
+    padding-right: 10px;
 }
 
 /* ---------- FOOTER --------- */
@@ -286,6 +290,7 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 20px;
     }
     
     .flexible-input label {
@@ -299,6 +304,7 @@ footer {
     input[type="tel"],
     select {
         width: 445px;
+        margin-bottom: 0;
     }
     
     input[id="zipcode"] {
@@ -307,6 +313,7 @@ footer {
     
      .flexible-input:last-child {
         width: 300px;
+        margin-bottom: 20px;
     }
 
     legend {
@@ -314,7 +321,13 @@ footer {
         padding-bottom: 50px;
     }
     
-    fieldset {    
-        padding-bottom: 50px;
+    button {
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
+    
+    fieldset {    
+        padding-bottom: 40px;
+    }
+
 }
