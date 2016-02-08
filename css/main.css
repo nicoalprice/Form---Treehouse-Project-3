@@ -41,7 +41,6 @@ h2 {
     text-align: center;
     width: 93.75%;
     margin: auto;
-/*    padding-bottom: 30px;*/
 }
 
 .intro p {
@@ -54,19 +53,22 @@ h2 {
     color: white;
 }
 
+img {
+    max-width: 20%;
+}
+
 /* ----- Horizontal Rules ----- */
 
 .thick-hr {
-    width: 93.75%;
+    width: 100%;
     border-bottom: 4px solid #2d3945;
     margin-bottom: 3px;
 }
 
 .thin-hr {
-    width: 93.75%;
+    width: 100%;
     border-bottom: 1px solid #2d3945;
     margin-top: 0px;
-/*    margin-bottom: 20px;*/
 }
 
 /* ----- Form ----- */
@@ -279,11 +281,15 @@ footer {
 
     .wrapper {
         max-width: 600px;
+        width: 100%;
     }
     
+    .intro,
     .thick-hr,
     .thin-hr {
-        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        width: 600px;
     }
     
     .flexible-input {
@@ -311,7 +317,7 @@ footer {
         width: 150px;
     }
     
-     .flexible-input:last-child {
+    .flexible-input:last-child {
         width: 300px;
         margin-bottom: 20px;
     }
