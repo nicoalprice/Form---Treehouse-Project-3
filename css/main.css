@@ -152,6 +152,11 @@ input:required {
     background: lightyellow;
 }
 
+input:valid,
+select:valid {
+    background: white;
+}
+
 ul {
     padding: 0;
     list-style-position: outside;

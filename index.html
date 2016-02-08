@@ -31,7 +31,7 @@
         
         <div class="flexible-input"><label for="email">Email Address</label><input type="email" id="email" name="user_email" placeholder="Required" required></div>
         
-        <div class="flexible-input"><label for="phone">Phone Number</label><input type="tel" id="phone" name="user_phone" maxlength="14"></div>
+        <div class="flexible-input"><label for="phone">Phone Number</label><input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="phone" name="user_phone" placeholder="xxx-xxx-xxxx"></div>
         
           <div class="flexible-input"><label for="address">Street Address</label><input type="text" id="address" name="user_address"></div>
         
@@ -93,7 +93,7 @@
                 <option value="WY">Wyoming</option>
             </select></div>
         
-        <div class="flexible-input"><label for="zipcode">Zip Code</label><input type="text" id="zipcode" name="user_zipcode" maxlength="5"></div>
+        <div class="flexible-input"><label for="zipcode">Zip Code</label><input type="text" pattern="[0-9]{5}" id="zipcode" name="user_zipcode" maxlength="5"></div>
         
       </fieldset>
         
