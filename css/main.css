@@ -103,6 +103,18 @@ select {
   border-radius: 5px;
   border: none;
   box-shadow: 2px 3px 3px rgba(45,57,69,.3);
+  transition: background 2.5s;
+}
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+  background: white;
+  transition: background 1s;
 }
 
 input[id="zipcode"] {
@@ -194,13 +206,14 @@ button {
   background-image: linear-gradient(to bottom, #4EBBB5, #2D3945);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#4EBBB5, endColorstr=#2D3945);
 }
 
-button:hover{
-     background-color: #3b9b95; background-image: -webkit-gradient(linear, left top, left bottom, from(#3b9b95), to(#191f26));
-     background-image: -webkit-linear-gradient(top, #3b9b95, #191f26);
-     background-image: -moz-linear-gradient(top, #3b9b95, #191f26);
-     background-image: -ms-linear-gradient(top, #3b9b95, #191f26);
-     background-image: -o-linear-gradient(top, #3b9b95, #191f26);
-     background-image: linear-gradient(to bottom, #3b9b95, #191f26);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#3b9b95, endColorstr=#191f26);
+button:hover {
+     background-color: #3b9b95;
+     background-image: -webkit-gradient(linear, left top, left bottom, from(#3b9b95), to(#191f26));
+         background-image: -webkit-linear-gradient(top, #3b9b95, #191f26);
+         background-image: -moz-linear-gradient(top, #3b9b95, #191f26);
+         background-image: -ms-linear-gradient(top, #3b9b95, #191f26);
+         background-image: -o-linear-gradient(top, #3b9b95, #191f26);
+         background-image: linear-gradient(to bottom, #3b9b95, #191f26);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#3b9b95, endColorstr=#191f26);
 }
 
 /* -- Form Placeholder Styling -- */
