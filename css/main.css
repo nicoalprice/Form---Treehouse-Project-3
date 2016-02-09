@@ -71,6 +71,10 @@ img {
     margin-top: 0;
 }
 
+.narrow-hr {
+    width: 93.5%;
+}
+
 /* ----- Form ----- */
 
 form {
